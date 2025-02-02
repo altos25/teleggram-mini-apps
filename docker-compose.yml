@@ -1,0 +1,47 @@
+services:
+
+  laravel:
+    build:
+      context: ./php
+    container_name: laravel_max
+    restart: always
+    working_dir: /var/www/app
+    volumes:
+      - ./app:/var/www/app
+    environment:
+      - VIRTUAL_HOST=max.quadro-druss.space
+      - LETSENCRYPT_HOST=max.quadro-druss.space
+    networks:
+      - web
+    depends_on:
+      - postgres_max
+
+  vue:
+    image: node:18-alpine
+    container_name: vue_max
+    working_dir: /var/www/html
+    restart: always
+    volumes:
+      - ./app:/var/www/html
+    command: sh -c "npm install && npm run dev"
+    networks:
+      - web
+
+  postgres_max:
+    image: postgres:15
+    container_name: postgres_max
+    restart: always
+    environment:
+      POSTGRES_DB: mydatabase
+      POSTGRES_USER: myuser
+      POSTGRES_PASSWORD: mypassword
+    volumes:
+      - max_pgdata:/var/lib/postgresql/data
+    networks:
+      - web
+networks:
+  web:
+    external: true
+
+volumes:
+  max_pgdata:
