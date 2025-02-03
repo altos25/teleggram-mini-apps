@@ -36,6 +36,12 @@
             <span>TELEGRAM MINI APP</span>
             <span>SITE DEVELOPMENT</span>
             <span>MINI APP DEVELOPMENT</span>
+            <span>TELEGRAM MINI APP</span>
+            <span>SITE DEVELOPMENT</span>
+            <span>MINI APP DEVELOPMENT</span>
+            <span>TELEGRAM MINI APP</span>
+            <span>SITE DEVELOPMENT</span>
+            <span>MINI APP DEVELOPMENT</span>
         </div>
     </div>
 
@@ -57,10 +63,99 @@
             </div>
             <div class="mt-4">
                 <div class="d-flex justify-content-between pb-4">
-                    <a href="#" class="btn btn-purple btn-lg me-3 col-5">Демо</a>
-                    <a href="#" class="btn btn-outline-purple btn-lg me-3 col-5">Консультация</a>
+                    <div class="col-6 pe-2">
+                        <a href="#" class="btn btn-purple btn-lg w-100">Демо</a>
+                    </div>
+                    <div class="col-6 ps-2">
+                        <a href="#" class="btn btn-outline-purple btn-lg w-100">Консультация</a>
+                    </div>
                 </div>
             </div>
+            <h3 class="montserrat m-auto pt-4 text-break fs-1 text-start">
+                Кто мы и почему это важно
+            </h3>
+            <div class="m-auto">
+                <p class="open-sans pt-3 fs-10 text-start text-muted">
+                    Мы — команда специалистов, которая помогает бизнесам выйти на новый уровень продаж и
+                    взаимодействия с клиентами через Telegram. Наш опыт включает разработку десятков успешных
+                    мини-приложений для разных ниш: от локальных кафе до крупных онлайн-магазинов.
+                    Мы делаем упор на удобство, простоту интеграции и эффективный результат.
+                </p>
+            </div>
+            <h3 class="montserrat m-auto pt-4 text-break fs-1 text-start">
+                Что мы предлагаем
+            </h3>
+            <div class="text-center my-3">
+                <div class="row g-3">
+                    <div class="col-12">
+                        <div class="stat-card text-start">
+                            <h4 class="stat-number">Готовые mini app</h4>
+                            <p class="stat-text text-muted">
+                                У нас есть шаблоны под самые разные направления:
+                                онлайн-магазины, информационное, сервис записи,
+                                доставка многое другое.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="stat-card text-start">
+                            <h2 class="stat-number">Быстрый запуск</h2>
+                            <p class="stat-text text-muted">Аренда уже готового решения позволяет стартовать за считанные часы.</p>
+                            <p class="stat-text text-muted">Не нужно месяцами ждать разработку и тратить бюджет на тесты.</p>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="stat-card text-start">
+                            <h2 class="stat-number">Персонализация</h2>
+                            <p class="stat-text text-muted">Удобно и легко подключаются ваше лого и цвета</p>
+                            <p class="stat-text text-muted">При необходимости доработаем функционал под ваши бизнес-задачи.</p>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="stat-card text-start">
+                            <h2 class="stat-number">Поддержка и обслуживание</h2>
+                            <p class="stat-text text-muted">Мы берём на себя все технические нюансы, чтобы вы сосредоточились на продажах.</p>
+                            <p class="stat-text text-muted">Сервис постоянно развивается и растёт количество услуг.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h3 class="montserrat m-auto pt-4 pb-2 text-break fs-1 text-center">
+                Наши демо-приложения
+            </h3>
+            <div class="text-center my-3">
+                <div class="row g-3">
+                    <div class="col-6 d-flex">
+                        <div class="stat-card w-100 text-center d-flex flex-column">
+                            <h4 class="stat-number">Информационное</h4>
+                            <p class="stat-text text-muted mb-4">Приложение-визитка для представления компании.</p>
+                            <a href="#" class="btn btn-outline-purple w-100 mt-auto">Открыть</a>
+                        </div>
+                    </div>
+                    <div class="col-6 d-flex">
+                        <div class="stat-card w-100 text-center d-flex flex-column">
+                            <h2 class="stat-number">Онлайн-магазин</h2>
+                            <p class="stat-text text-muted mb-4">Платформа для онлайн-продаж товаров.</p>
+                            <a href="#" class="btn btn-outline-purple w-100 mt-auto">Открыть</a>
+                        </div>
+                    </div>
+                    <div class="col-6 d-flex">
+                        <div class="stat-card w-100 text-center d-flex flex-column">
+                            <h2 class="stat-number">Запись на приём</h2>
+                            <p class="stat-text text-muted mb-4">Сервис бронирования услуг.</p>
+                            <a href="#" class="btn btn-outline-purple w-100 mt-auto">Открыть</a>
+                        </div>
+                    </div>
+                    <div class="col-6 d-flex">
+                        <div class="stat-card w-100 text-center d-flex flex-column">
+                            <h2 class="stat-number">Доставка</h2>
+                            <p class="stat-text text-muted mb-4">Инструмент для управления доставкой.</p>
+                            <a href="#" class="btn btn-outline-purple w-100 mt-auto">Открыть</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="w-100" style="height: 100px;"></div>
         </div>
     </section>
 </div>
