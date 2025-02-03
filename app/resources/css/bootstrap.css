@@ -1,0 +1,88 @@
+@import "bootstrap/dist/css/bootstrap.css";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+.mobile {
+    max-width: 430px;
+}
+
+.montserrat
+{
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    color: #3D3B40;
+}
+
+.open-sans
+{
+    font-family: "Open Sans", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
+
+.roboto
+{
+    font-family: "Roboto", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
+
+.brand-background {
+    background-color: #8848ab;
+    color: #ffffff;
+}
+
+.marquee-wrapper {
+    overflow: hidden;
+    position: relative;
+    white-space: nowrap;
+    display: flex;
+    padding: 10px 0;
+}
+
+.marquee {
+    display: flex;
+    min-width: 200%;
+    animation: marqueeScroll 10s linear infinite;
+}
+
+@keyframes marqueeScroll {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+}
+
+.marquee span {
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    color: rgba(128, 128, 128, 0.4);
+    padding-right: 50px;
+    font-weight: 700;
+}
+
+.btn-purple {
+    background-color: #8848AB;
+    color: white;
+    border: 2px solid #8848AB;
+}
+
+.btn-purple:hover,
+.btn-purple:focus,
+.btn-purple:active {
+    background-color: #7226A0;
+    border-color: #7226A0;
+}
+
+.btn-outline-purple {
+    color: #8848AB;
+    border: 2px solid #8848AB;
+    background-color: transparent;
+}
+
+.btn-outline-purple:hover,
+.btn-outline-purple:focus,
+.btn-outline-purple:active {
+    background-color: #8848AB;
+    color: white;
+}
