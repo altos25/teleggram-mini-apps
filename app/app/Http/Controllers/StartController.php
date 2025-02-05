@@ -4,12 +4,15 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Http;
+use Illuminate\Support\Facades\Log;
 
 class StartController extends Controller
 {
     public function start(Request $request)
     {
         $data = $request->all(); // Получаем все данные от Telegram
+
+        Log::channel('single')->info($data);
 
         $token = env('TELEGRAM_BOT_TOKEN');
         $chat_id = $data['message']['chat']['id']; // Получаем chat_id
