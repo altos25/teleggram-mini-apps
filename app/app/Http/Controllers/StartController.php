@@ -12,10 +12,15 @@ class StartController extends Controller
     {
         $data = $request->all(); // Получаем все данные от Telegram
 
-        Log::channel('single')->info($data);
+        // Проверяем, есть ли сообщение в запросе
+        if (!isset($data['message'])) {
+            Log::channel('single')->info('not message');
+
+            return response()->json(['error' => 'No message received'], 400);
+        }
 
         $token = env('TELEGRAM_BOT_TOKEN');
-        $chat_id = $data['message']['chat']['id']; // Получаем chat_id
+        $chat_id = $data['message']['chat']['id'];
 
         $text = "Нажмите, чтобы открыть Mini App: \n";
         $text .= "[Открыть Mini App](https://t.me/mini_apps_25_bot?startapp=1)";
@@ -33,6 +38,8 @@ class StartController extends Controller
             'text' => $text,
             'parse_mode' => 'Markdown',
         ]);
+
+
 
 
         Log::channel('single')->info('response', [$response->getBody()]);
