@@ -11,11 +11,6 @@ class StartController extends Controller
     {
         $data = $request->all(); // Получаем все данные от Telegram
 
-        // Проверяем, есть ли сообщение в запросе
-        if (!isset($data['message'])) {
-            return response()->json(['error' => 'No message received'], 400);
-        }
-
         $token = env('TELEGRAM_BOT_TOKEN');
         $chat_id = $data['message']['chat']['id']; // Получаем chat_id
 
