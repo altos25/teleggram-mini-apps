@@ -21,11 +21,21 @@ class StartController extends Controller
         $text .= "[Открыть Mini App](https://t.me/mini_apps_25_bot?startapp=1)";
 
         $url = "https://api.telegram.org/bot{$token}/sendMessage";
-        Http::post($url, [
+
+        Log::channel('single')->info('datas', [
+            $url,
+            $chat_id,
+            $text
+        ]);
+
+        $response = Http::post($url, [
             'chat_id' => $chat_id,
             'text' => $text,
             'parse_mode' => 'Markdown',
         ]);
+
+
+        Log::channel('single')->info('response', [$response->getBody()]);
 
         return response()->json(['message' => 'Ссылка отправлена']);
     }
