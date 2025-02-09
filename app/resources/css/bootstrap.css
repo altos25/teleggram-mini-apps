@@ -73,8 +73,9 @@
 .btn-purple:hover,
 .btn-purple:focus,
 .btn-purple:active {
-    background-color: #7226A0;
+    background-color: white;
     border-color: #7226A0;
+    color: #7226A0;
 }
 
 .btn-outline-purple {
@@ -108,4 +109,96 @@
     font-size: 1rem;
     color: #333;
     margin: 5px 0 0;
+}
+
+.custom-steps-container {
+    position: relative;
+    padding: 30px 15px;
+}
+
+.custom-step {
+    position: relative;
+    margin-bottom: 40px;
+}
+
+/* Большие цифры на фоне */
+.custom-step-number {
+    position: absolute;
+    left: -5px;
+    top: -39px;
+    font-size: 50px;
+    font-weight: bold;
+    color: rgba(136, 72, 171, 0.8);
+    z-index: -1;
+}
+
+/* Описание шагов */
+.custom-step-description {
+    font-size: 16px;
+}
+
+.carousel-item {
+    min-height: 450px; /* Достаточно места для review-card */
+}
+
+.review-card {
+    position: relative;
+    background: white;
+    border: 2px solid #8848AB;
+    border-radius: 15px;
+    padding: 20px;
+    min-height: 400px;
+}
+
+.review-card::before {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(136, 72, 171, 0.2); /* Полупрозрачный фиолетовый */
+    border-radius: 15px;
+    z-index: -1; /* Уводим назад */
+}
+
+.review-avatar{
+    flex-shrink: 0;
+    position: relative;
+    box-sizing: border-box;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    width: 80px;
+    height: 80px;
+}
+
+.review-author {
+    text-align: center;
+    font-weight: 500;
+}
+
+.review-text{
+    font-size: 0.95rem;
+}
+
+/* Навигационные стрелки */
+.carousel-control-prev,
+.carousel-control-next {
+    filter: invert(25%);
+    width: 8%;
+    opacity: 1;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(136, 72, 171, 0.1);
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.stat-price {
+    color: rgba(33, 37, 41, .85);
+    font-size: 0.8rem;
 }
