@@ -13,26 +13,29 @@
 </head>
 <body class="w-100 hero bg-light">
 <div class="mobile m-auto">
-    <section class="header brand-background">
-        <div class="container">
-            <div class="d-flex">
-                <div class="roboto col-7">
-                    <h2 class="bold text-start py-4 mb-0">WeBoomers</h2>
-                </div>
-                <div class="col-3 d-flex m-auto justify-content-end">
-                    <img src="/image/telegram.svg" alt="" class="px-2">
-                    <img src="/image/whatsapp.svg" alt="" class="px-2">
-                </div>
-                <div class="col-2 d-flex m-auto justify-content-end">
-                    <button class="btn border-0" type="button">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="white" class="bi bi-list" viewBox="0 0 16 16">
-                            <path fill-rule="evenodd" d="M2 12.5a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5"/>
-                        </svg>
-                    </button>
+    <header>
+        <section class="header-placeholder"></section>
+        <section class="header header-fixed">
+            <div class="container brand-background mobile">
+                <div class="d-flex">
+                    <div class="roboto col-7">
+                        <h2 class="bold text-start py-4 mb-0">WeBoomers</h2>
+                    </div>
+                    <div class="col-3 d-flex m-auto justify-content-end">
+                        <img src="/image/telegram.svg" alt="" class="px-2">
+                        <img src="/image/whatsapp.svg" alt="" class="px-2">
+                    </div>
+                    <div class="col-2 d-flex m-auto justify-content-end">
+                        <button class="btn border-0 navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="white" class="bi bi-list" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M2 12.5a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5"/>
+                            </svg>
+                        </button>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </header>
 
     <div class="marquee-wrapper">
         <div class="marquee">
@@ -47,6 +50,17 @@
             <span>MINI APP DEVELOPMENT</span>
         </div>
     </div>
+    <section>
+        <!-- Меню -->
+        <div class="menu-overlay collapse" id="navbarMenu">
+            <ul class="nav flex-column text-center">
+                <li class="nav-item"><a class="nav-link" href="#">Главная</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Портфолио</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Контакты</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Услуги</a></li>
+            </ul>
+        </div>
+    </section>
 
     <section class="py-3 text-center">
         <div class="container">
@@ -136,7 +150,7 @@
                 </h3>
                 <div class="text-center my-3">
                     <div class="row g-3">
-                        <div class="col-6 d-flex">
+                        <div class="col-6 col-ss-12 d-flex">
                             <div class="stat-card w-100 text-center d-flex flex-column">
                                 <h4 class="stat-number">Информационное</h4>
                                 <p class="stat-text text-muted mb-4">Приложение-визитка для представления компании.</p>
@@ -147,7 +161,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-6 d-flex">
+                        <div class="col-6 col-ss-12 d-flex">
                             <div class="stat-card w-100 text-center d-flex flex-column">
                                 <h2 class="stat-number">Запись на приём</h2>
                                 <p class="stat-text text-muted mb-4">Сервис бронирования услуг.</p>
@@ -158,7 +172,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-6 d-flex">
+                        <div class="col-6 col-ss-12 d-flex">
                             <div class="stat-card w-100 text-center d-flex flex-column">
                                 <h2 class="stat-number">Доставка</h2>
                                 <p class="stat-text text-muted mb-4">Инструмент для управления доставкой.</p>
@@ -170,7 +184,7 @@
 
                             </div>
                         </div>
-                        <div class="col-6 d-flex">
+                        <div class="col-6 col-ss-12 d-flex">
                             <div class="stat-card w-100 text-center d-flex flex-column">
                                 <h2 class="stat-number">Онлайн-магазин</h2>
                                 <p class="stat-text text-muted mb-4">Платформа для онлайн-продаж товаров.</p>
@@ -307,19 +321,15 @@
                 </div>
             </div>
 
-            <div class="d-flex custom-contact-card align-items-center py-2">
-                <div class="col-2"></div>
-                <div class="col-4">
+            <div class="d-flex">
+                <div class="col-5 custom-contact-card align-items-center py-2">
                     <i class="bi bi-telegram custom-contact-icon fs-2 "></i>
                 </div>
-                <div class="col-4">
+                <div class="col-2"></div>
+                <div class="col-5 custom-contact-card align-items-center py-2">
                     <i class="bi bi-whatsapp custom-contact-icon fs-2"></i>
                 </div>
-                <div class="col-2"></div>
             </div>
-
-            <!-- Кнопка -->
-            <a href="tel:+74951234567" class="btn custom-contact-text btn-purple w-100">Позвонить нам</a>
         </div>
         <div class="w-100" style="height: 100px;"></div>
     </footer>
@@ -328,27 +338,32 @@
 </body>
 
 <style>
-    .custom-footer {
-        background-color: #111;
-        color: white;
-        padding: 30px 20px;
+    .menu-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 70vh; /* 70% экрана */
+        background-color: #f0fbff;
+        z-index: 850; /* Поверх всего */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: transform 0.3s ease-in-out;
+        transform: translateY(-100%); /* По умолчанию скрыто */
+        box-shadow: 0 4px 10px #0000001a;
     }
 
-    .custom-contact-card {
-        background-color: rgba(255, 255, 255, 0.1);
-        border-radius: 10px;
-        margin-bottom: 10px;
+    /* Показываем меню при открытии */
+    .menu-overlay.show {
+        transform: translateY(0);
     }
 
-    .custom-contact-icon,
-    .custom-contact-text {
-        color: white !important;
-    }
-
-
-    .custom-button:hover {
-        background-color: #e68900;
-        color: white;
+    /* Стили ссылок */
+    .menu-overlay .nav-link {
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: #333;
     }
 </style>
 
