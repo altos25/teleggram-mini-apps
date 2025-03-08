@@ -238,6 +238,147 @@
     color: white;
 }
 
+.menu-overlay {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%) translateY(-100%);
+    height: 100vh;
+    background-color: white;
+    z-index: 850;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.menu-overlay.show {
+    transform: translateX(-50%) translateY(0);
+}
+
+.menu-header {
+    margin-bottom: 30px;
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+    background-color: #f5f5f5;
+    border-radius: 12px;
+    padding: 10px 15px;
+}
+
+.search-input {
+    border: none;
+    background: none;
+    width: 100%;
+    padding-left: 10px;
+    font-size: 16px;
+}
+
+.search-input:focus {
+    outline: none;
+}
+
+.menu-overlay .nav {
+    margin-top: 20px;
+}
+
+.menu-overlay .nav-link {
+    font-size: 18px;
+    color: #333;
+    padding: 15px 0;
+    transition: all 0.3s ease;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.menu-overlay .nav-link:hover {
+    color: var(--bs-purple);
+    padding-left: 10px;
+}
+
+.menu-overlay .bi {
+    font-size: 20px;
+    color: #666;
+}
+
+.menu-overlay .nav-link:hover .bi {
+    color: var(--bs-purple);
+}
+
+.menu-footer {
+    margin-top: auto;
+    padding-top: 20px;
+}
+
+.contact-info {
+    border-top: 1px solid #f0f0f0;
+    padding-top: 20px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    color: #666;
+    font-size: 14px;
+}
+
+.contact-item i {
+    margin-right: 10px;
+    color: var(--bs-purple);
+}
+
+.modal-dialog {
+    margin-top: 70px;
+}
+
+.copy-phone-btn,
+.copy-email-btn {
+    cursor: pointer;
+}
+
+.copy-phone-btn .tooltip-text,
+.copy-email-btn .tooltip-text {
+    visibility: hidden;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 10px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.2s, visibility 0.2s;
+    font-size: 12px;
+    white-space: nowrap;
+    pointer-events: none;
+}
+
+.copy-phone-btn:hover .tooltip-text:not([style]),
+.copy-email-btn:hover .tooltip-text:not([style]) {
+    visibility: visible;
+    opacity: 1;
+}
+
+.copy-phone-btn .bi-files,
+.copy-email-btn .bi-files {
+    font-size: 1.2rem;
+}
+
+.custom-contact-text {
+    color: #666 !important;
+    text-decoration: none;
+}
+
+.custom-contact-text:hover {
+    color: var(--bs-purple) !important;
+}
+
 
 
 
