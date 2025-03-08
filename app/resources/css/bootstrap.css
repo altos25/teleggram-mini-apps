@@ -125,11 +125,12 @@
 .custom-step-number {
     position: absolute;
     left: -5px;
-    top: -39px;
+    top: -25px;
     font-size: 50px;
     font-weight: bold;
     color: rgba(136, 72, 171, 0.8);
     z-index: -1;
+    line-height: 1;
 }
 
 /* Описание шагов */
@@ -379,10 +380,16 @@
     color: var(--bs-purple) !important;
 }
 
+/* Исправление для якорных ссылок */
+:target {
+    scroll-margin-top: 40px; /* Регулируйте это значение в зависимости от высоты вашей шапки */
+    scroll-behavior: smooth;
+}
 
-
-
-
+html {
+    scroll-padding-top: 40px; /* Дублируем для лучшей поддержки браузерами */
+    scroll-behavior: smooth;
+}
 
 @media (max-width: 400px) {
     .btn-lg {
