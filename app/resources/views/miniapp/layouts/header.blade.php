@@ -7,7 +7,7 @@
                     <h2 class="bold text-start py-4 mb-0">WeBoomers</h2>
                 </div>
                 <div class="col-3 d-flex m-auto justify-content-end">
-                    <a href="tg://resolve?domain=Altos25">
+                    <a href="https://t.me/altos25">
                         <img src="/image/telegram.svg" alt="" class="px-2">
                     </a>
                     <a href="https://wa.me/79277454649">
@@ -38,4 +38,4 @@
         <span>SITE DEVELOPMENT</span>
         <span>MINI APP DEVELOPMENT</span>
     </div>
-</div> 
+</div>

@@ -329,14 +329,14 @@
                         </div>
                         <div class="d-flex gap-2">
                             <button type="submit" class="btn btn-purple flex-grow-1">Отправить</button>
-                            <a href="tg://resolve?domain=Altos25" class="btn btn-outline-purple">
+                            <a href="https://t.me/altos25" class="btn btn-outline-purple">
                                 <i class="bi bi-telegram me-2"></i>Написать в Telegram
                             </a>
                         </div>
                     </form>
                     <div class="mt-4">
                         <p class="text-muted small">
-                            Оставьте ваш контакт, и наш менеджер свяжется с вами в течение 15 минут. 
+                            Оставьте ваш контакт, и наш менеджер свяжется с вами в течение 15 минут.
                             Мы ценим ваше время и используем данные только для консультации — никакого спама!
                         </p>
                     </div>

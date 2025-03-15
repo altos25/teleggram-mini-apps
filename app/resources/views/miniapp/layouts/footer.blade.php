@@ -33,7 +33,7 @@
         <div class="row mt-2">
             <div class="col-6">
                 <div class="custom-contact-card align-items-center py-2 d-flex justify-content-center">
-                    <a href="tg://resolve?domain=Altos25">
+                    <a href="https://t.me/altos25">
                         <i class="bi bi-telegram custom-contact-icon fs-2"></i>
                     </a>
                 </div>
