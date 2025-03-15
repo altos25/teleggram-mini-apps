@@ -10,7 +10,10 @@ export default defineConfig({
                 'resources/js/app.js',
                 // Набор для Bootstrap
                 'resources/css/bootstrap.css',
-                'resources/js/bootstrap.js'
+                'resources/js/bootstrap.js',
+                // Набор для demo
+                'resources/css/demo.css',
+                'resources/js/demo.js'
             ],
             refresh: true,
         }),

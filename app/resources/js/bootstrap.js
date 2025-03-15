@@ -6,12 +6,12 @@ window.axios = axios;
 
 window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 
-document.addEventListener("DOMContentLoaded", function () {
-    const marquee = document.querySelector(".marquee");
-    marquee.innerHTML += marquee.innerHTML; // Дублируем текст
-});
-
 document.addEventListener('DOMContentLoaded', function() {
+    const marquee = document.querySelector(".marquee");
+    if (marquee) {
+        marquee.innerHTML += marquee.innerHTML;
+    }
+
     const menuLinks = document.querySelectorAll('[data-menu-link]');
     const menuOverlay = document.getElementById('navbarMenu');
 
@@ -46,20 +46,23 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
+
     // Обработка отправки формы
     const feedbackForm = document.getElementById('feedbackForm');
-    feedbackForm.addEventListener('submit', async (e) => {
-        e.preventDefault();
+    if (feedbackForm) {
+        feedbackForm.addEventListener('submit', async (e) => {
+            e.preventDefault();
 
-        const formData = {
-            name: document.getElementById('name').value,
-            phone: document.getElementById('phone').value,
-            email: document.getElementById('email').value,
-            message: document.getElementById('message').value
-        };
+            const formData = {
+                name: document.getElementById('name')?.value || '',
+                phone: document.getElementById('phone')?.value || '',
+                email: document.getElementById('email')?.value || '',
+                message: document.getElementById('message')?.value || '',
+            };
 
-
-    });
+            console.log("Отправка формы", formData);
+        });
+    }
 
     // Добавляем функционал копирования телефона
     document.querySelector('.copy-phone-btn').addEventListener('click', function() {
