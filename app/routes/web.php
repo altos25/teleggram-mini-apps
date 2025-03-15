@@ -12,4 +12,8 @@ Route::get('/miniapp', function () {
     return view('miniapp.start');
 });
 
+Route::get('/appointment', function () {
+    return view('miniapp.appointment');
+});
+
 Route::any('/telegram/webhook', [StartController::class, 'start'])->withoutMiddleware([VerifyCsrfToken::class]);

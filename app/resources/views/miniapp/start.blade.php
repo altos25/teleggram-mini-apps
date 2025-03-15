@@ -1,78 +1,11 @@
 @extends('miniapp.layouts.app')
 
 @section('content')
-    <section>
-        <!-- Меню -->
-        <div class="menu-overlay mobile m-auto collapse" id="navbarMenu">
-            <div class="menu-header">
-                <div class="search-box">
-                    <i class="bi bi-search"></i>
-                    <input type="text" placeholder="Поиск" class="search-input">
-                </div>
-            </div>
-            <ul class="nav flex-column">
-                <li class="nav-item">
-                    <a class="nav-link d-flex align-items-center" href="#about">
-                        <i class="bi bi-house-door me-3"></i>
-                        <span>О нас</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link d-flex align-items-center" href="#services">
-                        <i class="bi bi-grid me-3"></i>
-                        <span>Наши приложения</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link d-flex align-items-center" href="#how-it-works">
-                        <i class="bi bi-gear me-3"></i>
-                        <span>Как это работает</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link d-flex align-items-center" href="#services2">
-                        <i class="bi bi-collection me-3"></i>
-                        <span>Что мы предлагаем</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link d-flex align-items-center consultation-btn" type="button">
-                        <i class="bi bi-collection me-3"></i>
-                        <span>Консультация</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link d-flex align-items-center" href="#reviews">
-                        <i class="bi bi-star me-3"></i>
-                        <span>Отзывы</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link d-flex align-items-center" href="#contact">
-                        <i class="bi bi-envelope me-3"></i>
-                        <span>Контакты</span>
-                    </a>
-                </li>
-            </ul>
-            <div class="menu-footer">
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <i class="bi bi-envelope-fill"></i>
-                        <span>altos2525@gmail.com</span>
-                    </div>
-                    <div class="contact-item">
-                        <i class="bi bi-telephone-fill"></i>
-                        <span>8 (927) 745-46-49</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
     <section class="py-3 text-center">
         <div class="container">
             <div class="mb-5">
-                <img src="/image/banner-phones-bg.webp" alt="" class="w-75">
+                <img src="{{ asset('/image/banner-phones-bg.webp') }}" alt="" class="w-75">
             </div>
             <div class="stat-card my-2" id="about">
                 <h1 class="montserrat m-auto pt-4 text-break fs-1 text-start">
@@ -243,7 +176,7 @@
                     <div class="carousel-inner pb-3">
                         <div class="carousel-item active">
                             <div class="review-card text-center w-75 m-auto">
-                                <img class="review-avatar mb-4" src="/image/+k.jpg" alt="">
+                                <img class="review-avatar mb-4" src="{{ asset('/image/+k.jpg') }}" alt="">
                                 <p class="review-author montserrat">Pluskarma – платформа управления отзывами</p>
                                 <p class="review-text text-muted">
                                     После блокировок соцсетей продажи стали печальными. Аудитория перешла в TG...
@@ -254,7 +187,7 @@
 
                         <div class="carousel-item">
                             <div class="review-card text-center w-75 m-auto">
-                                <img class="review-avatar mb-4" src="/image/+k.jpg" alt="">
+                                <img class="review-avatar mb-4" src="{{ asset('/image/+k.jpg') }}" alt="">
                                 <p class="review-author montserrat">Pluskarma – платформа управления отзывами</p>
                                 <p class="review-text text-muted">
                                     Мы перешли в Telegram и увеличили продажи в 4 раза. Отличный результат!
@@ -264,7 +197,7 @@
 
                         <div class="carousel-item">
                             <div class="review-card text-center w-75 m-auto">
-                                <img class="review-avatar mb-4" src="/image/+k.jpg" alt="">
+                                <img class="review-avatar mb-4" src="{{ asset('/image/+k.jpg') }}" alt="">
                                 <p class="review-author montserrat">Pluskarma – платформа управления отзывами</p>
                                 <p class="review-text text-muted">
                                     Боты, которые были 1-2 года назад – это примитивные кнопочные
