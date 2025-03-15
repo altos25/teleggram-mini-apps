@@ -12,7 +12,7 @@ Route::get('/miniapp', function () {
     return view('miniapp.start');
 });
 
-Route::get('/appointment', function () {
+Route::get('/demo/booking', function () {
     return view('miniapp.appointment');
 });
 
